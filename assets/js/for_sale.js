@@ -1,49 +1,56 @@
-import {propieties_sale} from "./array_propieties.js"
+import {properties_sale} from "./array_propieties.js"
 
 const container = document.querySelector(`.container_for_sale`);
 
 
-export const forRent = (propieties_sale) => {
+export const forSale = (properties_sale) => {
     
     let HTMLcontent = "";
     
-    for(let propiety of propieties_sale){
+    for(let propiety of properties_sale){
 
-        let categoryText = "";
-        let categoryColor = "";
-        let faIcon = "";
+        let smokeText = "";
+        let smokeColor = "";
+        let smokeIcon = "";
 
-        if(propiety.pets === false){
-            categoryText = "smoking not Allowed";
-            categoryColor = "red";
-            faIcon = `<i class="fas fa-dollar-sign"></i>`;
-        }else{
-            categoryText = "Smoking Allowed";
-            categoryColor = "green";
-            faIcon = `<i class="fas fa-smoking"></i>`;
-        };
-        if(propiety.pets === false){
-            categoryText = "Pets Not Allowed";
-            categoryColor = "red";
-            faIcon = `<i class="fa-solid fa-ban"></i>`;
-        }else{
-            categoryText = "Friendly Pets";
-            categoryColor = "green";
-            faIcon = `<i class="fas fa-paw"></i>`;
-        };
+        let petsText = "";
+        let petsColor = "";
+        let petsIcon = "";
+
+        if (propiety.smoke === false) {
+            smokeText = "Smoking Not Allowed";
+            smokeColor = "red";
+            smokeIcon = `<i class="fas fa-ban"></i>`;
+            } else {
+            smokeText = "Smoking Allowed";
+            smokeColor = "green";
+            smokeIcon = `<i class="fas fa-smoking"></i>`;
+            }
+
+        if (propiety.pets === false) {
+            petsText = "Pets Not Allowed";
+            petsColor = "red";
+            petsIcon = `<i class="fas fa-ban"></i>`;
+            } else {
+            petsText = "Pets Allowed";
+            petsColor = "green";
+            petsIcon = `<i class="fas fa-paw"></i>`;
+            }
+
 
         HTMLcontent += `
                         <div class="cardBox">
                             <img src="${propiety.src}" alt="${propiety.name}">
                             <h3>${propiety.name}</h3>
                             <p>${propiety.description}</p>
-                            <p><i class="fas fa-map-marker-alt">${propiety.location}</p>
+                            <p><i class="fas fa-map-marker-alt"></i>${propiety.location}</p>
                             <p>
-                                <i class="fas fa-bed"></i>${propiety.room} |
-                                <i class="fas fa-bath"></i>${propiety.bathroom}
+                                <i class="fas fa-bed"></i>BedRooms:${propiety.rooms} |
+                                <i class="fas fa-bath"></i>BathRooms:${propiety.bathrooms}
                             </p>
                             <p><i class="fas fa-dollar-sign"></i>${propiety.cost}</p>
-                            <p style="color:${categoryColor}; font-weight:bold;">${faIcon}${categoryText}</p>
+                            <p style="color:${smokeColor}; font-weight:bold;">${smokeIcon}${smokeText}</p>
+                            <p style="color:${petsColor}; font-weight:bold;">${petsIcon}${petsText}</p>
                         </div>
         
         `
@@ -53,3 +60,5 @@ export const forRent = (propieties_sale) => {
     container.innerHTML = HTMLcontent;
 
 };
+
+forSale(properties_sale);

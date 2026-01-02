@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADL Real Estate</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="assets/css/estilos.css">
+
 </head>
+
 <body>
 
     <header>
+
         <nav class="nav-bar">
-            <h1>ADL Real estate</h1>
-            <a href="./assets/views/forSale.html">For Sale:</a>
-            <a href="./assets/views/forRent.html">For Rent:</a>
+            <div class="logo">
+                <h1>ADL Real estate</h1>
+            </div>
+            <ul>
+                <li><a href="./assets/views/forSale.html">For Sale:</a></li>
+                <li><a href="./assets/views/forRent.html">For Rent:</a></li>
+            </ul>
         </nav>
+
         <div class="hero-banner">
             <p>Find your new property</p>
         </div>
+
     </header>
 
     <main>
@@ -23,16 +36,19 @@
         <section>
             <h2>Propieties for sale:</h2>
             <div class="container_for_sale"></div>
-            <button type="button" class="view_sale_button">View all properties for sale</button>
+            <button type="button" class="view_sale_properties">View all properties for sale</button>
         </section>
 
         <section>
             <h2>Propieties for rent:</h2>
             <div class="container_for_rent"></div>
-            <button type="button" class="view_rent_button">View all properties for rent</button>
+            <button type="button" class="view_rent_properties">View all properties for rent</button>
         </section>
 
     </main>
+
+    <script type="module" src="./assets/js/buttons.js"></script>
+    <script type="module" src="./assets/js/real_state.js"></script>
     
 </body>
 </html>

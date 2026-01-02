@@ -1,6 +1,33 @@
-.main-section {
+:root {
+
+  --bg-main: #0f172a;       
+  --bg-surface: #1e293b;
+
+  --color-primary: #60a5fa;
+  --color-secondary: #34d399;
+  --color-accent: #a78bfa;
+
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --border-light: #334155;
+}
+
+/* ----------- RESET ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.hero-banner {
     background-image: url('../img/img-main.jpeg');
-    background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+    background-size: cover;
     background-position: center;
     height: 300px;
     display: flex;
@@ -10,10 +37,113 @@
     text-align: center;
 }
 
-.card {
-    height: 100px;
+.hero-banner p{
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--text-main);
+  text-shadow: 5px 5px 10px var(--bg-surface) ;
 }
 
-.card img{
-    height: 250px;
+/* ----------- NAVBAR ----------- */
+.nav-bar {
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-light);
+  padding: 1rem 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar .logo {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+}
+
+.nav-bar a:hover {
+  color: var(--color-primary);
+}
+
+/* ----------- PROPERTIES CONTAINERS ----------- */
+
+.container_for_sale,
+.container_for_rent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+section h2{
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--border-light);
+  text-align: center;
+  text-shadow: 2px 2px #60a5fa;
+}
+
+.view_rent_properties,
+.view_sale_properties {
+  background-color: var(--color-primary);
+
+  margin: 1rem 0 1rem 10rem;
+  padding: 1.2rem;
+  border-radius: 999px;
+  border: none;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+section button:hover{
+  opacity: 0.7;
+}
+
+/*  ----------- CARDS CONTAINERS -----------  */
+
+.cardBox {
+  width: 25%;
+  border: 1px solid var(--border-light);
+  border-radius: 0.6rem;
+  background-color: rgba(var(--color-primary-rgb), 0.9);
+  padding: 0;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.cardBox:hover{
+  box-shadow: 1px 1px 5px #0f172a;
+}
+
+
+.cardBox img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardBox h3 {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
 }

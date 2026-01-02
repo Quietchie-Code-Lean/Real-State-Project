@@ -72,7 +72,7 @@ export const properties_rent = [
 },
 {
     name: 'Student Flat Near University',
-    src: 'https://images.unsplash.com/photo-1600585154450-892be0b7f8d5',
+    src: 'https://plus.unsplash.com/premium_photo-1687995672195-0676a1e1d4f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGFjY29tb2RhdGlvbnxlbnwwfHwwfHx8MA%3D%3D',
     description: 'Affordable flat ideal for students, near public transport.',
     location: 'Coimbra, Portugal',
     rooms: 1,
@@ -83,7 +83,7 @@ export const properties_rent = [
 },
 {
     name: 'Modern Duplex',
-    src: 'https://images.unsplash.com/photo-1580584120725-0e32f9c6a0b6',
+    src: 'https://plus.unsplash.com/premium_photo-1684863506939-17dc77365f01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGFjY29tb2RhdGlvbnxlbnwwfHwwfHx8MA%3D%3D',
     description: 'Duplex with open spaces and modern design.',
     location: 'Madrid, Spain',
     rooms: 3,
@@ -105,7 +105,7 @@ export const properties_rent = [
 },
 {
     name: 'Mountain Cabin',
-    src: 'https://images.unsplash.com/photo-1560185127-6b5944b0d8c4',
+    src: 'https://plus.unsplash.com/premium_photo-1675745330148-1f7e5a7674a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWNjb21vZGF0aW9ufGVufDB8fDB8fHww',
     description: 'Cozy cabin in the mountains, perfect for weekend stays.',
     location: 'Sierra Nevada, Spain',
     rooms: 2,
@@ -116,7 +116,7 @@ export const properties_rent = [
 },
 {
     name: 'City Center Apartment',
-    src: 'https://images.unsplash.com/photo-1549187774-b4a13f3d55d2',
+    src: 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWNjb21vZGF0aW9ufGVufDB8fDB8fHww',
     description: 'Modern apartment in the heart of the city.',
     location: 'Lisbon, Portugal',
     rooms: 2,
@@ -127,7 +127,7 @@ export const properties_rent = [
 },
 {
     name: 'Quiet Countryside Home',
-    src: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6',
+    src: 'https://images.unsplash.com/photo-1668169064092-04dc2c657d85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGFjY29tb2RhdGlvbnxlbnwwfHwwfHx8MA%3D%3D',
     description: 'Peaceful house surrounded by nature.',
     location: 'Alentejo, Portugal',
     rooms: 3,
@@ -180,7 +180,7 @@ export const properties_sale = [
   },
   {
     name: 'Country Cottage',
-    src: 'https://images.unsplash.com/photo-1523217582562-09d0def993a6',
+    src: 'https://images.unsplash.com/photo-1623197258960-480a71198a85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgwfHxhY2NvbW9kYXRpb258ZW58MHx8MHx8fDA%3D',
     description: 'Cozy cottage surrounded by greenery.',
     location: 'Alentejo, Portugal',
     rooms: 3,
@@ -191,7 +191,7 @@ export const properties_sale = [
   },
   {
     name: 'Downtown Apartment',
-    src: 'https://images.unsplash.com/photo-1549187774-b4a13f3d55d2',
+    src: 'https://images.unsplash.com/photo-1643913591623-4335627a1677?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI3fHxhY2NvbW9kYXRpb258ZW58MHx8MHx8fDA%3D',
     description: 'Apartment in the city center, close to all amenities.',
     location: 'Lisbon, Portugal',
     rooms: 2,
@@ -257,7 +257,7 @@ export const properties_sale = [
   },
   {
     name: 'Cozy Mountain Chalet',
-    src: 'https://images.unsplash.com/photo-1560185127-6b5944b0d8c4',
+    src: 'https://plus.unsplash.com/premium_photo-1689609949921-6b2529511e38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAzfHxhY2NvbW9kYXRpb258ZW58MHx8MHx8fDA%3D',
     description: 'Chalet in the mountains, perfect for holidays.',
     location: 'Sierra Nevada, Spain',
     rooms: 3,
@@ -268,7 +268,7 @@ export const properties_sale = [
   },
   {
     name: 'Seaside Cottage',
-    src: 'https://images.unsplash.com/photo-1600585154450-892be0b7f8d5',
+    src: 'https://images.unsplash.com/photo-1751473679520-798f96026e01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGFjY29tb2RhdGlvbnxlbnwwfHwwfHx8MA%3D%3D',
     description: 'Small cottage near the sea, perfect for relaxing.',
     location: 'Malaga, Spain',
     rooms: 2,
